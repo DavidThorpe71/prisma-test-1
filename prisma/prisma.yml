@@ -1,0 +1,5 @@
+endpoint: https://eu1.prisma.sh/david-thorpe-aa275c/david-test/dev
+datamodel: datamodel.graphql
+hooks:
+  post-deploy:
+    - graphql get-schema -p prisma
